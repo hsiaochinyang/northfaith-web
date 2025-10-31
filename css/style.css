@@ -1,7 +1,142 @@
-* { box-sizing: border-box; }
-body { margin: 0; font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif; color: #2E4B3F; background:#EEE7DE; }
-header { background:#2E4B3F; color:#fff; padding:16px; text-align:center; }
-nav a { color:#fff; text-decoration:none; margin:0 10px; font-weight:600; }
-main { max-width: 880px; margin: 0 auto; padding: 24px; text-align: center; }
-a { color:#2E4B3F; }
-iframe { border:0; }
+/* Reset & Base */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif;
+  color: #2E4B3F;
+  background: #EEE7DE;
+  line-height: 1.6;
+}
+
+/* Header & Navigation */
+header {
+  background: #2E4B3F;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+}
+
+header h1 {
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  margin-bottom: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 6px 12px;
+  border-radius: 6px;
+  transition: background 0.3s ease;
+}
+
+nav a:hover {
+  background: #3f6352;
+  text-decoration: none;
+}
+
+/* Main Content */
+main {
+  max-width: 880px;
+  margin: 0 auto;
+  padding: 32px 16px;
+  text-align: center;
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+h2 {
+  font-size: 1.3rem;
+  color: #2E4B3F;
+  margin-bottom: 16px;
+}
+
+p {
+  margin-bottom: 16px;
+  font-size: 1rem;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+ul li {
+  margin: 10px 0;
+}
+
+a {
+  color: #2E4B3F;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Buttons & Links */
+button, .btn {
+  background: #2E4B3F;
+  color: #fff;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+button:hover, .btn:hover {
+  background: #3f6352;
+}
+
+/* iFrame (Power BI Embed) */
+iframe {
+  border: 0;
+  width: 100%;
+  height: 700px;
+  border-radius: 8px;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  margin-top: 16px;
+}
+
+/* Footer (optional future use) */
+footer {
+  background: #2E4B3F;
+  color: #fff;
+  text-align: center;
+  padding: 12px;
+  font-size: 0.9rem;
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  nav a {
+    padding: 5px 8px;
+    font-size: 0.9rem;
+  }
+
+  main {
+    padding: 24px 10px;
+  }
+}
