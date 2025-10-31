@@ -1,0 +1,7 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: "Noto Sans TC", system-ui, -apple-system, sans-serif; color: #2E4B3F; background:#EEE7DE; }
+header { background:#2E4B3F; color:#fff; padding:16px; text-align:center; }
+nav a { color:#fff; text-decoration:none; margin:0 10px; font-weight:600; }
+main { max-width: 880px; margin: 0 auto; padding: 24px; text-align: center; }
+a { color:#2E4B3F; }
+iframe { border:0; }
