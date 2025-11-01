@@ -3,27 +3,78 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Join｜The North Faith</title>
+  <title>活動資訊｜The North Faith</title>
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- Header (same as index.html) -->
   <header>
-    <h1>Join The North Faith</h1>
+    <h1>The North Faith｜北聚 🏕️</h1>
     <nav>
-      <a href="index.html" class="home-link">🏠 首頁</a>
+      <a href="index.html">🏠 首頁</a>
+      <a href="impact.html">💚 捐款紀錄</a>
+      <a href="join.html">📅 活動資訊</a>
     </nav>
   </header>
 
   <main>
+    <!-- 近期活動 -->
     <section>
-      <h2>加入我們</h2>
-      <p>想一起參與活動或成為工作夥伴嗎？</p>
-      <ul style="list-style: none; padding: 0;">
-        <li><a href="YOUR_LINE_LINK" target="_blank">💬 加入 LINE 官方帳號</a></li>
-        <li><a href="YOUR_THREADS_LINK" target="_blank">📱 追蹤 Threads</a></li>
-        <li><a href="YOUR_FORM_LINK" target="_blank">📋 志工報名表</a></li>
-      </ul>
+      <h2>近期活動</h2>
+      <p>最新清單與報名資訊如下；若無法顯示，請點擊下方連結於新分頁開啟。</p>
+
+      <!-- Google Sheet Embed -->
+      <iframe
+        title="活動清單"
+        src="YOUR_SHEET_EMBED_URL"
+        width="100%"
+        height="520"
+        frameborder="0"
+        allowfullscreen>
+      </iframe>
+
+      <p style="margin-top:12px;">
+        <a href="YOUR_SHEET_EMBED_URL" target="_blank" class="btn">在新分頁開啟活動清單</a>
+        &nbsp;&nbsp;
+        <a href="YOUR_EVENT_FORM_URL" target="_blank" class="btn">填寫報名表</a>
+      </p>
+    </section>
+
+    <!-- LINE社群 -->
+    <section>
+      <h2>LINE 社群</h2>
+      <p>加入「北聚圈」與學長姐們自由交流、開團揪團，一起認識新朋友。</p>
+      <p>
+        <a href="YOUR_LINE_GROUP_URL" target="_blank" class="btn">加入 LINE 社群</a>
+      </p>
+    </section>
+
+    <!-- 志工招募 -->
+    <section>
+      <h2>志工招募</h2>
+      <p>若您認同我們「輕鬆交友 × 永續公益」的理念，歡迎填寫表單成為合作主揪或小幫手（行政・財務・攝影・活動・設計・資訊）。</p>
+      <p>
+        <a href="YOUR_VOLUNTEER_FORM_URL" target="_blank" class="btn">填寫志工表單</a>
+      </p>
     </section>
   </main>
+
+  <!-- Footer (same as index.html) -->
+  <footer>
+    <h3>📩 聯絡我們</h3>
+    <p>email：<a href="mailto:thenorthfaithtw@gmail.com">thenorthfaithtw@gmail.com</a></p>
+
+    <div class="social-icons">
+      <a href="https://lin.ee/5T3AMxr" target="_blank">
+        <img src="img/line.png" alt="LINE" class="footer-icon">
+      </a>
+      <a href="https://www.instagram.com/thenorthfaithtw?igsh=YXhxN24xNjV2MDlu&utm_source=qr" target="_blank">
+        <img src="img/instagram.png" alt="Instagram" class="footer-icon">
+      </a>
+      <a href="https://www.threads.net/@thenorthfaithtw" target="_blank">
+        <img src="img/threads.png" alt="Threads" class="footer-icon">
+      </a>
+    </div>
+  </footer>
 </body>
 </html>
