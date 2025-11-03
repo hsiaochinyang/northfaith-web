@@ -190,8 +190,9 @@ footer a:hover {
     left: 10px;
     top: 10px;
   }
-  
-/* 北集熊 image section */
+} /* ✅ CLOSE the mobile media query here */
+
+/* 北集熊 / star image section */
 .northbear {
   text-align: center;
   margin-top: 20px;
