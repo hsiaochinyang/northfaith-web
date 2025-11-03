@@ -200,7 +200,7 @@ footer a:hover {
 .northbear-img {
   display: block;
   margin: 10px auto 0 auto; /* centers horizontally */
-  width: 60%;               /* roughly same width as paragraph block */
-  max-width: 400px;         /* prevents it from being too large on wide screens */
-  height: auto;             /* keeps aspect ratio */
+  width: 50%;               /* smaller on all screens */
+  max-width: 300px;         /* caps size on big screens */
+  height: auto;             /* keeps proportions */
 }
