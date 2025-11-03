@@ -212,3 +212,8 @@ footer a:hover {
     width: 220px;
   }
 }
+
+/* Intro section text color */
+.intro-text p {
+  color: #000;
+}
