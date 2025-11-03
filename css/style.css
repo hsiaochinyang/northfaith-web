@@ -198,7 +198,9 @@ footer a:hover {
 }
 
 .northbear-img {
-  width: 220px;    /* adjust to fit your layout */
-  max-width: 90%;
-  border-radius: 12px;
+  display: block;
+  margin: 10px auto 0 auto; /* centers horizontally */
+  width: 60%;               /* roughly same width as paragraph block */
+  max-width: 400px;         /* prevents it from being too large on wide screens */
+  height: auto;             /* keeps aspect ratio */
 }
