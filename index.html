@@ -5,58 +5,28 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>The North Faith｜北集星</title>
   <link rel="stylesheet" href="css/style.css" />
-
-  <style>
-    /* Scoped header styles so it works even without editing style.css */
-    header.site-header{position:sticky;top:0;z-index:50;background:#fff;border-bottom:1px solid #e5e7eb}
-    .wrap{max-width:1100px;margin:0 auto;padding:12px 16px}
-    .brand-row{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:12px;min-height:64px}
-    .brand{display:inline-flex;align-items:center;text-decoration:none;color:inherit}
-    .brand img{height:48px;width:auto;display:block}
-    .site-title{text-align:center}
-    .site-title h1{margin:0;font-weight:800;letter-spacing:.2px;font-size:clamp(20px,3.2vw,30px)}
-    .menu-btn{display:none;border:1px solid #e5e7eb;background:#fff;padding:10px 12px;border-radius:10px;cursor:pointer}
-    nav.primary{display:flex;justify-content:center;gap:28px;padding:10px 0 6px;border-top:1px solid #e5e7eb}
-    nav.primary a{text-decoration:none;color:#111827;font-weight:700;padding:8px 10px;border-radius:10px}
-    nav.primary a:hover{background:#f5f5f5}
-    @media (max-width:768px){
-      .menu-btn{display:inline-flex;justify-self:end}
-      nav.primary{display:none;flex-direction:column;gap:4px;align-items:stretch;padding:8px 0 12px}
-      header.site-header.nav-open nav.primary{display:flex}
-      .brand img{height:40px}
-      .site-title h1{font-size:20px}
-    }
-  </style>
 </head>
 <body>
+
   <!-- HEADER -->
-  <header class="site-header" id="siteHeader">
-    <div class="wrap">
-      <!-- Row 1: logo (left) | title (center) | hamburger (right on mobile) -->
-      <div class="brand-row">
-        <a href="index.html" class="brand" aria-label="The North Faith 首頁">
-          <img src="img/logo-star-192.png" alt="The North Faith 北集星 標誌">
-        </a>
+  <header>
+    <!-- 左上角 Logo -->
+    <img src="img/logo-star-192.png" alt="The North Faith 北集星 標誌" class="logo">
 
-        <div class="site-title">
-          <h1>The North Faith｜北集星</h1>
-        </div>
+    <!-- 標題 -->
+    <h1>The North Faith｜北集星</h1>
 
-        <button class="menu-btn" id="menuToggle" aria-expanded="false" aria-controls="primaryNav">☰</button>
-      </div>
-
-      <!-- Row 2: navigation -->
-      <nav class="primary" id="primaryNav" aria-label="主導覽">
-        <a href="index.html">首頁</a>
-        <a href="impact.html">捐款紀錄</a>
-        <a href="join.html">活動資訊</a>
-        <a href="volunteer.html">志工招募</a>
-      </nav>
-    </div>
+    <!-- 導覽列 -->
+    <nav>
+      <a href="index.html">首頁</a>
+      <a href="impact.html">捐款紀錄</a>
+      <a href="join.html">活動資訊</a>
+      <a href="volunteer.html">志工招募</a>
+    </nav>
   </header>
 
   <!-- MAIN -->
-  <main class="wrap">
+  <main>
     <section>
       <p>北台灣上班族經營的非營利交友社團 🌿</p>
       <p>報名活動費用包含自由樂捐環保 NGO 🌍</p>
@@ -71,7 +41,7 @@
   </main>
 
   <!-- FOOTER -->
-  <footer class="wrap">
+  <footer>
     <h3>📩 聯絡我們</h3>
     <p>email：<a href="mailto:thenorthfaithtw@gmail.com">thenorthfaithtw@gmail.com</a></p>
 
@@ -79,23 +49,14 @@
       <a href="https://lin.ee/bzM6IWN" target="_blank" rel="noopener">
         <img src="img/line.png" alt="LINE" class="footer-icon">
       </a>
-      <a href="https://www.instagram.com/thenorthfaithtw?igsh=YXhxN24xNjV2MDlu&utm_source=qr" target="_blank" rel="noopener">
+      <a href="https://www.instagram.com/thenorthfaithtw" target="_blank" rel="noopener">
         <img src="img/instagram.png" alt="Instagram" class="footer-icon">
       </a>
-      <a href="https://www.threads.com/@thenorthfaithtw?igshid=NTc4MTIwNjQ2YQ==" target="_blank" rel="noopener">
+      <a href="https://www.threads.com/@thenorthfaithtw" target="_blank" rel="noopener">
         <img src="img/threads.png" alt="Threads" class="footer-icon">
       </a>
     </div>
   </footer>
 
-  <script>
-    // Mobile menu toggle
-    const headerEl = document.getElementById('siteHeader');
-    const btn = document.getElementById('menuToggle');
-    btn.addEventListener('click', () => {
-      const open = headerEl.classList.toggle('nav-open');
-      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    });
-  </script>
 </body>
 </html>
