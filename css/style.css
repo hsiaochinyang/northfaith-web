@@ -190,4 +190,15 @@ footer a:hover {
     left: 10px;
     top: 10px;
   }
+  
+/* 北集熊 image section */
+.northbear {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.northbear-img {
+  width: 220px;    /* adjust to fit your layout */
+  max-width: 90%;
+  border-radius: 12px;
 }
