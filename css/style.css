@@ -195,8 +195,8 @@ footer a:hover {
 /* 北集熊 / star image section */
 .northbear {
   text-align: center;
-  margin-top: 20px;
-  margin-bottom: 35px; /* ✅ 35px space below the bear image */
+  margin-top: 35px;
+  margin-bottom: 0px; /* ✅ 35px space below the bear image */
 }
 
 /* Base size (mobile–tablet): uses clamp for smooth scaling */
