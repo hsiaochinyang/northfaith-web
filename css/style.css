@@ -1,4 +1,4 @@
-/* Reset & Base */
+2111/* Reset & Base */
 * {
   box-sizing: border-box;
   margin: 0;
@@ -196,6 +196,7 @@ footer a:hover {
 .northbear {
   text-align: center;
   margin-top: 20px;
+  margin-bottom: 35px; /* ✅ 35px space below the bear image */
 }
 
 /* Base size (mobile–tablet): uses clamp for smooth scaling */
