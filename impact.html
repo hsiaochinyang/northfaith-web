@@ -2,44 +2,13 @@
 <html lang="zh-Hant">
 <head>
   <meta charset="UTF-8" />
-  <!-- Lock the page zoom level (prevents users from zooming in/out) -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>捐款紀錄｜The North Faith</title>
-
-  <!-- Global CSS -->
   <link rel="stylesheet" href="css/style.css?v=3" />
-
-  <style>
-    /* --- Inline minimal styling (keeps your existing site styles intact) --- */
-
-    main {
-      padding: 35px;
-    }
-
-    /* Responsive Power BI container (default 16:9 aspect ratio; use 75% for 4:3) */
-    .pbi-responsive {
-      position: relative;
-      width: 100%;
-      height: 0;
-      padding-top: 56.25%; /* 16:9 ratio; change to 75% for 4:3 */
-    }
-
-    .pbi-responsive iframe {
-      position: absolute;
-      inset: 0;
-      width: 100%;
-      height: 100%;
-      border: 0;
-    }
-
-    /* Optional: Add top padding if your header is fixed */
-    /* body { padding-top: 64px; } */
-  </style>
 </head>
 
 <body>
   <header>
-    <!-- Website Header -->
     <h1>The North Faith｜北集星</h1>
     <nav>
       <a href="index.html">首頁</a>
@@ -52,23 +21,17 @@
 
   <main>
     <section>
-    <p class="text-black">公開透明的每次活動與捐款紀錄</p>
-    <div class="pbi-responsive" aria-label="North Faith Dashboard">
-    <iframe title="thenorthfaith" width="600" height="486" src="https://app.powerbi.com/view?r=eyJrIjoiYzY1YzkyNzAtNTRmOC00ZjNkLThkZWItZDM2OTE3NGE4OTg5IiwidCI6Ijk3MjVkY2IwLTc0YmYtNDlmMi05MDJlLTAyMjQ0MGY5MDgwZCJ9" frameborder="0" allowFullScreen="true">
-  
-    </iframe>
-    </div>
-    <!-- Notes:
-         1) 'pageView=fitToWidth' keeps the report at a fixed zoom level (no internal zooming).
-            - Use 'pageView=actualSize' for 100% scale.
-            - Use 'pageView=fitToPage' to fit the full report vertically.
-         2) 'filterPaneEnabled=false' and 'navContentPaneEnabled=false' hide the Power BI toolbar.
-         3) The <meta viewport> tag prevents browser zoom gestures (pinch or Ctrl + scroll).
-    -->
-  </section>
+      <p class="text-black">公開透明的每次活動與捐款紀錄</p>
+      <div class="pbi-container" aria-label="North Faith Dashboard">
+        <iframe 
+          title="thenorthfaith"
+          src="https://app.powerbi.com/view?r=eyJrIjoiYzY1YzkyNzAtNTRmOC00ZjNkLThkZWItZDM2OTE3NGE4OTg5IiwidCI6Ijk3MjVkY2IwLTc0YmYtNDlmMi05MDJlLTAyMjQ0MGY5MDgwZCJ9"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </section>
   </main>
 
-  <!-- Footer -->
   <footer>
     <h3>📩 聯絡我們</h3>
     <p>Email：<a href="mailto:thenorthfaithtw@gmail.com">thenorthfaithtw@gmail.com</a></p>
