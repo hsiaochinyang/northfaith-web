@@ -212,6 +212,20 @@ footer a:hover {
   .northbear-img {
     width: 220px;
   }
+  
+}
+/* Power BI embed container */
+.pbi-container {
+  width: 100%;
+  height: 80vh;        /* responsive height (80% of screen height) */
+  max-height: 800px;   /* optional cap for large screens */
+  margin: 0 auto;
+}
+
+.pbi-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
 }
 
 /* Part section text color */
