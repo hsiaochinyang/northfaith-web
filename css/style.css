@@ -191,7 +191,7 @@ header h1 {
 
 } /* ✅ CLOSE the mobile media query here */
 
-/* 北集熊 / star image section */
+/* logo / star image section */
 .northbear {
   text-align: center;
   margin-top: 35px;
@@ -201,7 +201,7 @@ header h1 {
 /* Base size (mobile–tablet): uses clamp for smooth scaling */
 .northbear-img {
   display: block;
-  margin: 10px auto 0;
+  margin: 0 auto 0;
   width: clamp(160px, 28vw, 260px);  /* min 160px, ideal 28% of viewport width, max 260px */
   height: auto;
 }
