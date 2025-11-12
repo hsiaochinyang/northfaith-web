@@ -231,3 +231,22 @@ header h1 {
 .text-black {
   color: #000;
 }
+
+.footer-credit {
+  font-size: 12px;
+  color: #fff;               /* white text */
+  text-align: center;
+  line-height: 1.6;
+  margin-top: 25px;
+  opacity: 0.85;             /* gentle contrast against white bg */
+}
+
+.footer-credit strong {
+  color: #fff;               /* keep consistent white tone */
+  font-weight: 600;          /* slightly emphasized */
+}
+
+.footer-credit:hover {
+  opacity: 1;                /* soft fade-in on hover */
+  transition: opacity 0.3s ease;
+}
