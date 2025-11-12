@@ -201,7 +201,7 @@ header h1 {
 /* Base size (mobile–tablet): uses clamp for smooth scaling */
 .northbear-img {
   display: block;
-  margin: 0 auto 0;
+  margin: 0 auto;
   width: clamp(160px, 28vw, 260px);  /* min 160px, ideal 28% of viewport width, max 260px */
   height: auto;
 }
