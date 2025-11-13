@@ -253,9 +253,9 @@ header h1 {
 
 /* Only for pages that need a smaller gap above the footer */
 .main-tight-footer {
-  padding-bottom: 10px;   /* reduce footer gap */
+  padding-bottom: 15px;   /* reduce footer gap */
 }
 
 .main-tight-footer section:last-of-type {
-  margin-bottom: 10px;    /* reduce space under last section */
+  margin-bottom: 15px;    /* reduce space under last section */
 }
