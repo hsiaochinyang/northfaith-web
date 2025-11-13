@@ -250,3 +250,12 @@ header h1 {
   opacity: 1;                /* soft fade-in on hover */
   transition: opacity 0.3s ease;
 }
+
+/* Remove extra gap above footer */
+section:last-of-type {
+  margin-bottom: 10px !important; /* Was 40px */
+}
+
+main {
+  padding-bottom: 10px;  /* Reduce from 32px */
+}
