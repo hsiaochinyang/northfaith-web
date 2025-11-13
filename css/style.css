@@ -194,15 +194,15 @@ header h1 {
 /* logo / star image section */
 .northbear {
   text-align: center;
-  margin-top: 35px;     /* 20px above the image */
-  margin-bottom: 0px;  /* 20px below the image */
-}e
+  margin-top: 35px;     /* 35px above the image */
+  margin-bottom: 0px;   /* 0px below the image */
+}
 
 /* Base size (mobile–tablet): uses clamp for smooth scaling */
 .northbear-img {
   display: block;
   margin: 0 auto;
-  width: clamp(160px, 28vw, 260px);  /* min 160px, ideal 28% of viewport width, max 260px */
+  width: clamp(160px, 28vw, 260px);
   height: auto;
 }
 
@@ -211,8 +211,8 @@ header h1 {
   .northbear-img {
     width: 220px;
   }
-  
-}
+} /* ← THIS was missing */
+
 /* Power BI embed container */
 .pbi-container {
   width: 100%;
