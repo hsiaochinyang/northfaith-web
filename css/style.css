@@ -22,6 +22,17 @@ header {
   box-shadow: 0 2px 6px rgba(0,0,0,0.15);
 }
 
+/* Header logo */
+.header-logo-link {
+  display: inline-block;
+}
+
+.header-logo-img {
+  width: 90px;      /* 🔧 adjust this for icon size */
+  height: auto;
+  margin-bottom: 10px;
+}
+
 nav {
   display: flex;
   justify-content: center;
@@ -168,10 +179,9 @@ header h1 {
   margin-bottom: 10px;
 }
 
-/* Responsive tweaks (for phones) */
 @media (max-width: 600px) {
   header h1 {
-    font-size: 1.2rem;  /* overrides size only on small screens */
+    font-size: 1.2rem;
   }
 
   nav a {
@@ -183,13 +193,11 @@ header h1 {
     padding: 24px 10px;
   }
 
-  header .logo {
-    height: 70px;
-    left: 10px;
-    top: 10px;
+  /* Smaller logo on phones */
+  .header-logo-img {
+    width: 70px;
   }
-
-} /* ✅ CLOSE the mobile media query here */
+}
 
 /* logo / star image section */
 .northbear {
