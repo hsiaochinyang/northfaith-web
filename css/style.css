@@ -28,11 +28,17 @@ header {
 }
 
 .header-logo-img {
-  width: 90px;      /* 🔧 adjust this for icon size */
+  width: 60px;     /* ↓ smaller on desktop/laptop */
   height: auto;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
+/* Mobile: even smaller */
+@media (max-width: 600px) {
+  .header-logo-img {
+    width: 48px;   /* ↓ smaller on phones */
+  }
+}
 nav {
   display: flex;
   justify-content: center;
