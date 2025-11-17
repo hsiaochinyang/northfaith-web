@@ -21,29 +21,46 @@
     </nav>
   </header>
 
-  <main>    
-    <!-- 近期活動 -->
-    <section>
-      <h2>近期活動</h2>
-      <p class="text-black">若無法顯示，請點擊下方「在新分頁開啟活動清單」</p>
+<main>    
+  <!-- 近期活動 -->
+  <section>
+    <p>近期活動</p>
 
-      <!-- Google Sheet Embed -->
-      <iframe
-        title="活動清單"
-        src="https://docs.google.com/spreadsheets/d/e/2PACX-1vREebNDDLh1Yikkf7v26zDbSThrgrR0Eb7-Bs9ghjju-cyKqu57cyrUeuwnsuwEyj0tTIaJWjCz2Vb6/pubhtml?widget=true&amp;headers=false"
-        width="100%"
-        height="520"
-        frameborder="0"
-        allowfullscreen>
-      </iframe>
+    <!-- Event Photo -->
+    <div class="event-photo-wrapper" style="text-align:center; margin: 20px 0;">
+      <img 
+        src="images/event-photo.jpg" 
+        alt="近期活動照片" 
+        style="max-width: 100%; height: auto; border-radius: 8px;"
+        loading="lazy"
+      >
+    </div>
 
-      <p style="margin-top:35px;">
-        <a href="https://docs.google.com/spreadsheets/d/14SMiRZKkWQ5BTdZE1o0mh30YdHeYIBWUz3ogiptPbE4/edit?usp=sharing" target="_blank" class="btn">在新分頁開啟活動清單</a>
-        &nbsp;&nbsp;
-      </p>
-    </section>
+    <p class="text-black">
+      若無法顯示，請點擊下方「在新分頁開啟活動清單」
+    </p>
 
-  </main>
+    <!-- Google Sheet Embed -->
+    <iframe
+      title="活動清單"
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vREebNDDLh1Yikkf7v26zDbSThrgrR0Eb7-Bs9ghjju-cyKqu57cyrUeuwnsuwEyj0tTIaJWjCz2Vb6/pubhtml?widget=true&amp;headers=false"
+      width="100%"
+      height="520"
+      frameborder="0"
+      allowfullscreen>
+    </iframe>
+
+    <p style="margin-top: 35px;">
+      <a 
+        href="https://docs.google.com/spreadsheets/d/14SMiRZKkWQ5BTdZE1o0mh30YdHeYIBWUz3ogiptPbE4/edit?usp=sharing" 
+        target="_blank" 
+        class="btn">
+        在新分頁開啟活動清單
+      </a>
+    </p>
+  </section>
+</main>
+
 
   <!-- Footer (same as index.html) -->
   <footer>
