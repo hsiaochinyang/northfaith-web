@@ -152,6 +152,18 @@ footer a:hover {
   text-decoration: none;
 }
 
+.top-icon-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.footer-icon {
+  width: 42px;
+  height: 42px;
+  border-radius: 12px;
+  transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
 .social-icons {
   display: flex;
   justify-content: center;
